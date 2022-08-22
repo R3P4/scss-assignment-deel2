@@ -1,0 +1,241 @@
+html {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+html body {
+  display: grid;
+  height: auto;
+  width: 100%;
+  background: #c3cfe2;
+  grid-template-columns: auto-fit, 1fr;
+  grid-template-rows: auto-fit, 2, 1fr;
+  grid-template-areas: "main" "footer";
+  overflow-x: hidden;
+}
+html body main {
+  grid-area: main;
+}
+html body main .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+html body main .flex-container .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  margin: 0px 0px;
+  padding: 10px 0px;
+  box-shadow: inset;
+  position: relative;
+}
+html body main .flex-container .container .image {
+  border: 10px solid white;
+  border-radius: 15px;
+  margin: 27px;
+  padding: 0px;
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+html body main .flex-container .container .image:hover {
+  opacity: 0.3;
+}
+html body main .flex-container .container .portret {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+html body main .flex-container .container .portret:hover {
+  opacity: 1;
+}
+html body main .flex-container .container .portret .text {
+  background-color: #594caf;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+html body footer {
+  grid-area: footer;
+  border: 10px solid #686de0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #686de0;
+  width: auto;
+  height: auto;
+  margin: 20px 20px 0px 0px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.368);
+}
+html body footer .footer {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  text-shadow: 2px 2px grey;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 20px;
+}
+html body footer .footer a:link {
+  color: red;
+  margin: 10px 10px 10px 10px;
+}
+@media (max-width: 768px) {
+  html body body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background: #c3cfe2;
+    grid-template-columns: 2, 1fr;
+    grid-template-rows: 2, 1fr;
+    grid-template-areas: "main main" "footer footer";
+    overflow-x: hidden;
+  }
+  html body body .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  html body body .flex-container .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    box-shadow: inset;
+    position: relative;
+  }
+  html body body .flex-container .container .image {
+    border: 10px solid white;
+    border-radius: 15px;
+    margin: auto;
+    padding: 0px;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    transition: 0.5s ease;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  html body body .flex-container .container .image:hover {
+    opacity: 0.3;
+  }
+  html body body .flex-container .container .portret {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  html body body .flex-container .container .portret:hover {
+    opacity: 1;
+  }
+  html body body .flex-container .container .portret .text {
+    background-color: #594caf;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
+@media (max-width: 1024px) {
+  html body body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background: #c3cfe2;
+    grid-template-columns: repeat auto-fit, minmax 3, 1fr;
+    grid-template-rows: repeat 3, 1fr;
+    grid-template-areas: "main main main" "main main main" "footer footer footer";
+    overflow-x: hidden;
+  }
+  html body body .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  html body body .flex-container .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    box-shadow: inset;
+    position: relative;
+  }
+  html body body .flex-container .container .image {
+    border: 10px solid white;
+    border-radius: 15px;
+    margin: auto;
+    padding: 0px;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    transition: 0.5s ease;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  html body body .flex-container .container .image:hover {
+    opacity: 0.3;
+  }
+  html body body .flex-container .container .portret {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  html body body .flex-container .container .portret:hover {
+    opacity: 1;
+  }
+  html body body .flex-container .container .portret .text {
+    background-color: #594caf;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}/*# sourceMappingURL=style.css.map */
