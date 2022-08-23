@@ -127,7 +127,7 @@ footer {
         }
     }
 }
-@include media ("<=tablet"){
+@include media ("<=tablet" min-width 768px){
     body {
         display: grid;
         height: 100%;
@@ -194,7 +194,7 @@ footer {
 }
 }
 }
-@include media ("<=desktop"){
+@include media ("<=desktop" min-width 1024px){
     body {
         display: grid;
         height: 100%;
@@ -223,7 +223,7 @@ footer {
                 box-shadow: inset;
                 position: relative;
                 .image {
-                    border: 10px solid white;
+                    border: 10px solid rgb(118, 122, 235);
                     border-radius: 15px;
                     margin: auto;
                     padding:0px;
@@ -255,6 +255,7 @@ footer {
                     color: white;
                     font-size: 16px;
                     padding: 16px 32px;
+                    border: 2px solid #594caf 10px;
                   }
                   
                   }
